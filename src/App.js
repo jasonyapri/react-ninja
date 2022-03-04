@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import BlogDetail from './BlogDetail';
 import Create from './Create';
 import { Routes, Route } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/create" element={<Create />} />
         </Routes>
       </div>
