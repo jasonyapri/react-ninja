@@ -6,10 +6,13 @@ const Clock = () => {
 
   useEffect(() => {
     // console.log('useEffect')
-    setInterval(() => {
+
+    let timer = setInterval(() => {
       // console.log('setInterval')
       setDate(new Date().toLocaleTimeString());
     }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
 
   return ( 
