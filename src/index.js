@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+// import Reservation from './pages/Reservation';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -10,6 +11,7 @@ ReactDOM.render(
       <App />
     </React.StrictMode>
   </BrowserRouter>,
+  // <Reservation />,
   document.getElementById('root')
 );
 
